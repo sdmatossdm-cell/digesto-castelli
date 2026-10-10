@@ -2,27 +2,18 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Digesto Municipal de Castelli</title>
+  <meta name="description" content="Consultá ordenanzas, decretos, resoluciones y demás normativa municipal de Castelli.">
 
-  <meta name="description" content="Consultá las ordenanzas, resoluciones y normativa municipal del Honorable Concejo Deliberante de Castelli.">
-
-  <!-- Vista previa para WhatsApp -->
-  <meta property="og:type" content="website">
   <meta property="og:title" content="Digesto Municipal de Castelli">
-  <meta property="og:description" content="Consultá la normativa municipal del Honorable Concejo Deliberante de Castelli.">
+  <meta property="og:description" content="Honorable Concejo Deliberante de Castelli. Consultá la normativa municipal.">
   <meta property="og:url" content="https://sdmatossdm-cell.github.io/digesto-castelli/">
-  <meta property="og:site_name" content="Honorable Concejo Deliberante de Castelli">
+  <meta property="og:site_name" content="Digesto Municipal de Castelli">
   <meta property="og:image" content="https://sdmatossdm-cell.github.io/digesto-castelli/logo-hcd.png">
-  <meta property="og:image:alt" content="Escudo del Honorable Concejo Deliberante de Castelli">
-
+  <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Digesto Municipal de Castelli">
-  <meta name="twitter:description" content="Consultá la normativa municipal en línea.">
-  <meta name="twitter:image" content="https://sdmatossdm-cell.github.io/digesto-castelli/logo-hcd.png">
-
-  <meta name="theme-color" content="#243b55">
 
   <style>
     * {
@@ -32,226 +23,129 @@
     body {
       margin: 0;
       min-height: 100vh;
+      padding: 24px 16px;
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 24px;
-      font-family: Arial, Helvetica, sans-serif;
-      color: #243447;
       background: #f1f4f8;
+      color: #243247;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
-    main {
+    .contenedor {
       width: 100%;
-      max-width: 840px;
-      padding: 42px 30px;
+      max-width: 620px;
+      padding: 36px 28px;
       text-align: center;
       background: #ffffff;
-      border-radius: 24px;
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+      border-radius: 16px;
+      box-shadow: 0 5px 24px rgba(0, 0, 0, 0.09);
     }
 
     .logo {
-  display: block;
-  width: 100%;
-  max-width: 300px;
-  max-height: 130px;
-  height: auto;
-  margin: 0 auto 20px;
-  object-fit: contain;
-}
-
-main {
-  width: 100%;
-  max-width: 840px;
-  padding: 30px 28px;
-  text-align: center;
-  background: #ffffff;
-  border-radius: 24px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
-}
-
-.institucion {
-  margin-bottom: 8px;
-  font-size: 18px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  color: #647b96;
-  text-transform: uppercase;
-}
-
-h1 {
-  margin: 14px 0;
-  font-size: 36px;
-  line-height: 1.2;
-  color: #243b55;
-}
-
-p {
-  max-width: 700px;
-  margin: 20px auto;
-  font-size: 21px;
-  line-height: 1.5;
-  color: #526174;
-}
-
-.boton {
-  display: inline-block;
-  margin-top: 18px;
-  padding: 17px 30px;
-  color: #ffffff;
-  background: #243b55;
-  border-radius: 12px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 20px;
-}
-
-footer {
-  margin-top: 28px;
-  font-size: 16px;
-  color: #7b8794;
-}
-
-@media (max-width: 600px) {
-  body {
-    padding: 14px;
-  }
-
-  main {
-    padding: 26px 18px;
-  }
-
-  .logo {
-    max-width: 250px;
-    max-height: 100px;
-    margin-bottom: 18px;
-  }
-
-  .institucion {
-    font-size: 14px;
-  }
-
-  h1 {
-    font-size: 28px;
-  }
-
-  p {
-    font-size: 17px;
-    line-height: 1.5;
-  }
-
-  .boton {
-    display: block;
-    width: 100%;
-    padding: 16px 10px;
-    font-size: 17px;
-  }
-
-  footer {
-    margin-top: 24px;
-    font-size: 13px;
-  }
-
-  h1 {
-      margin: 18px 0;
-      font-size: 44px;
-      line-height: 1.2;
-      color: #243b55;
+      display: block;
+      width: 150px;
+      max-width: 65%;
+      height: auto;
+      margin: 0 auto 22px;
     }
 
-    p {
-      max-width: 700px;
-      margin: 26px auto;
-      font-size: 24px;
-      line-height: 1.7;
+    .institucion {
+      margin: 0 0 10px;
+      color: #46566b;
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      line-height: 1.5;
+    }
+
+    h1 {
+      margin: 0 0 18px;
+      color: #183b65;
+      font-size: 30px;
+      line-height: 1.2;
+    }
+
+    .descripcion {
+      margin: 0 auto 28px;
+      max-width: 470px;
       color: #526174;
+      font-size: 16px;
+      line-height: 1.7;
     }
 
     .boton {
       display: inline-block;
-      margin-top: 24px;
-      padding: 20px 36px;
+      width: 100%;
+      max-width: 360px;
+      padding: 17px 22px;
+      border-radius: 8px;
+      background: #174a7e;
       color: #ffffff;
-      background: #243b55;
-      border-radius: 12px;
-      text-decoration: none;
+      font-size: 16px;
       font-weight: bold;
-      font-size: 23px;
+      text-decoration: none;
+      letter-spacing: 0.4px;
       transition: background 0.2s ease;
     }
 
     .boton:hover {
-      background: #365675;
+      background: #10375f;
     }
 
-    footer {
-      margin-top: 44px;
-      font-size: 17px;
+    .pie {
+      margin: 24px 0 0;
+      color: #7b8795;
+      font-size: 12px;
       line-height: 1.5;
-      color: #7b8794;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 480px) {
       body {
-        padding: 14px;
+        padding: 16px 12px;
       }
 
-      main {
-        padding: 30px 20px;
-        border-radius: 18px;
+      .contenedor {
+        padding: 28px 20px;
       }
 
       .logo {
-        max-width: 100%;
-        margin-bottom: 24px;
-      }
-
-      .institucion {
-        font-size: 14px;
+        width: 125px;
       }
 
       h1 {
-        font-size: 29px;
+        font-size: 25px;
       }
 
-      p {
-        font-size: 17px;
-        line-height: 1.6;
+      .descripcion {
+        font-size: 15px;
       }
 
       .boton {
-        display: block;
-        width: 100%;
-        padding: 17px 12px;
-        font-size: 17px;
-      }
-
-      footer {
-        margin-top: 30px;
-        font-size: 13px;
+        padding: 16px 12px;
+        font-size: 15px;
       }
     }
   </style>
 </head>
 
 <body>
-  <main>
+  <main class="contenedor">
+
     <img
+      class="logo"
       src="https://sdmatossdm-cell.github.io/digesto-castelli/logo-hcd.png"
       alt="Escudo del Honorable Concejo Deliberante de Castelli"
-      class="logo"
     >
 
-    <div class="institucion">
-      Honorable Concejo Deliberante
-    </div>
+    <p class="institucion">
+      HONORABLE CONCEJO DELIBERANTE CASTELLI
+    </p>
 
     <h1>Digesto Municipal de Castelli</h1>
 
-    <p>
-      Consultá las ordenanzas, resoluciones y demás normativa
-      municipal desde un solo lugar.
+    <p class="descripcion">
+      Consultá ordenanzas, decretos, resoluciones y demás normativa municipal.
     </p>
 
     <a
@@ -263,9 +157,10 @@ footer {
       INGRESAR AL DIGESTO
     </a>
 
-    <footer>
+    <p class="pie">
       Honorable Concejo Deliberante de Castelli
-    </footer>
+    </p>
+
   </main>
 </body>
 </html>
