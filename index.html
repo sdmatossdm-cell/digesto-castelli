@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Digesto Municipal de Castelli</title>
-  <meta name="description" content="Consultá ordenanzas, decretos, resoluciones y demás normativa municipal de Castelli.">
+  <meta name="description" content="Consultá ordenanzas, decretos, resoluciones y demás normativa municipal de Castelli, con asistente virtual.">
 
   <meta property="og:title" content="Digesto Municipal de Castelli">
-  <meta property="og:description" content="Honorable Concejo Deliberante de Castelli. Consultá la normativa municipal.">
+  <meta property="og:description" content="Honorable Concejo Deliberante de Castelli. Consultá la normativa municipal con la ayuda de un asistente virtual.">
   <meta property="og:url" content="https://sdmatossdm-cell.github.io/digesto-castelli/">
   <meta property="og:site_name" content="Digesto Municipal de Castelli">
   <meta property="og:image" content="https://sdmatossdm-cell.github.io/digesto-castelli/logo-hcd.png">
@@ -67,11 +67,43 @@
     }
 
     .descripcion {
-      margin: 0 auto 28px;
+      margin: 0 auto 24px;
       max-width: 470px;
       color: #526174;
       font-size: 16px;
       line-height: 1.7;
+    }
+
+    .funciones {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin: 0 auto 28px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .funciones li {
+      padding: 14px 10px;
+      border: 1px solid #dbe3ec;
+      border-radius: 10px;
+      background: #f7f9fc;
+      color: #3b4b5f;
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    .funciones .icono {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 22px;
+    }
+
+    .funciones strong {
+      display: block;
+      margin-bottom: 2px;
+      color: #183b65;
+      font-size: 13px;
     }
 
     .boton {
@@ -89,8 +121,16 @@
       transition: background 0.2s ease;
     }
 
-    .boton:hover {
+    .boton:hover,
+    .boton:focus-visible {
       background: #10375f;
+    }
+
+    .nota {
+      margin: 14px 0 0;
+      color: #6b7a8c;
+      font-size: 13px;
+      line-height: 1.5;
     }
 
     .pie {
@@ -121,6 +161,10 @@
         font-size: 15px;
       }
 
+      .funciones {
+        grid-template-columns: 1fr;
+      }
+
       .boton {
         padding: 16px 12px;
         font-size: 15px;
@@ -148,6 +192,24 @@
       Consultá ordenanzas, decretos, resoluciones y demás normativa municipal.
     </p>
 
+    <ul class="funciones">
+      <li>
+        <span class="icono" aria-hidden="true">🔍</span>
+        <strong>Búsqueda ágil</strong>
+        Por número, año, tipo o tema.
+      </li>
+      <li>
+        <span class="icono" aria-hidden="true">🔗</span>
+        <strong>Normas vinculadas</strong>
+        Modificaciones y relaciones entre normas.
+      </li>
+      <li>
+        <span class="icono" aria-hidden="true">🤖</span>
+        <strong>Asistente virtual</strong>
+        Preguntale por una norma y te la muestra.
+      </li>
+    </ul>
+
     <a
       class="boton"
       href="https://script.google.com/macros/s/AKfycbxFHVoULv4MbfzItHAdrD8iWF4uM9N1Ufj9LrM00iCAQv5YRpJ-6gdVfd6A3w-xtXemow/exec"
@@ -156,6 +218,10 @@
     >
       INGRESAR AL DIGESTO
     </a>
+
+    <p class="nota">
+      El asistente está disponible una vez que iniciás sesión.
+    </p>
 
     <p class="pie">
       Honorable Concejo Deliberante de Castelli
