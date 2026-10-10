@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -8,15 +9,19 @@
 
   <meta name="description" content="Consultá las ordenanzas, resoluciones y normativa municipal del Honorable Concejo Deliberante de Castelli.">
 
+  <!-- Vista previa para WhatsApp y redes sociales -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Digesto Municipal de Castelli">
   <meta property="og:description" content="Honorable Concejo Deliberante de Castelli. Consultá la normativa municipal en línea.">
   <meta property="og:url" content="https://sdmatossdm-cell.github.io/digesto-castelli/">
   <meta property="og:site_name" content="Honorable Concejo Deliberante de Castelli">
+  <meta property="og:image" content="https://sdmatossdm-cell.github.io/digesto-castelli/logo-hcd.png">
+  <meta property="og:image:alt" content="Escudo del Honorable Concejo Deliberante de Castelli">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Digesto Municipal de Castelli">
   <meta name="twitter:description" content="Consultá la normativa municipal en línea.">
+  <meta name="twitter:image" content="https://sdmatossdm-cell.github.io/digesto-castelli/logo-hcd.png">
 
   <meta name="theme-color" content="#243b55">
 
@@ -45,6 +50,15 @@
       background: #ffffff;
       border-radius: 16px;
       box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    .logo {
+      display: block;
+      width: 100%;
+      max-width: 380px;
+      height: auto;
+      margin: 0 auto 26px;
+      object-fit: contain;
     }
 
     .institucion {
@@ -79,6 +93,7 @@
       text-decoration: none;
       font-weight: bold;
       font-size: 16px;
+      transition: background 0.2s ease;
     }
 
     .boton:hover {
@@ -88,13 +103,49 @@
     footer {
       margin-top: 28px;
       font-size: 12px;
+      line-height: 1.5;
       color: #7b8794;
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 16px;
+      }
+
+      main {
+        padding: 28px 20px;
+      }
+
+      .logo {
+        max-width: 300px;
+        margin-bottom: 22px;
+      }
+
+      h1 {
+        font-size: 25px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      .boton {
+        display: block;
+        width: 100%;
+        padding: 15px 12px;
+      }
     }
   </style>
 </head>
 
 <body>
   <main>
+    <img
+      src="logo-hcd.png"
+      alt="Escudo del Honorable Concejo Deliberante de Castelli"
+      class="logo"
+    >
+
     <div class="institucion">
       Honorable Concejo Deliberante
     </div>
@@ -121,3 +172,4 @@
   </main>
 </body>
 </html>
+```
